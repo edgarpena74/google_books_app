@@ -1,0 +1,7 @@
+#booksContainer {
+  text-align: none !important;
+  border-style: solid !important;
+  border-width: 10px !important;
+  border-color: #0059b3 !important;
+  background: red !important;
+}

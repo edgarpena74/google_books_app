@@ -1,11 +1,12 @@
 import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import "./Nav.css";
 
 const Navigation = () => {
   return (
     <div>
-      <Navbar>
+      <Navbar id="navBar">
         <Nav className="justify-content-end" activeKey="/home">
           <Nav.Item>
             <Nav.Link href="/home">Active</Nav.Link>
