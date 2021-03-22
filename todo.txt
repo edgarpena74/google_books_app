@@ -1,0 +1,10 @@
+set up server.js
+    connect express, mongodb, mongoose, port
+set up models folder
+    -make schema
+set up connection to api
+
+front end
+    -set up components page
+    -set up utils with API
+    -set up necessary scripts
