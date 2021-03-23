@@ -3,21 +3,12 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import SearchResults from "./SearchResults";
-// import API from "../utils/API";
+import API from "../../utils/API";
+import "./Search.css";
 
 const Search = () => {
-  //   const apiKey = process.env.API_KEY;
-  //   const url = `https://www.googleapis.com/books/v1/volumes?q=${bookSearch}:keyes&${apiKey}`;
+  const [results, setResults] = useState([]);
 
-  //   const [bookInfo, setBookInfo] = useState([
-  //     {
-  //       title: "",
-  //       authors: "",
-  //       description: "",
-  //       image: "",
-  //       link: "",
-  //     },
-  //   ]);
   const [bookSearch, setBookSearch] = useState({
     userInput: "",
   });
@@ -30,9 +21,10 @@ const Search = () => {
     e.preventDefault();
     try {
       console.log(bookSearch, " this is from handle submit");
-      //   API.getBooks(bookSearch).then((res) => {
-      //     console.log(res);
-      //   });
+      API.getBooks(bookSearch).then((res) => {
+        setResults(res.data.items);
+        console.log(res.data.items);
+      });
     } catch (error) {
       console.log(error);
     }
@@ -57,9 +49,9 @@ const Search = () => {
   //   };
 
   return (
-    <Container>
-      <Form onSubmit={handleSubmit}>
-        <Form.Group>
+    <Container className="searchContainer">
+      <Form onSubmit={handleSubmit} className="formCon">
+        <Form.Group className="formGroup">
           <Form.Label>Google Books Search</Form.Label>
           <Form.Control
             onChange={onChange}
@@ -68,10 +60,13 @@ const Search = () => {
             name="userInput"
           />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button variant="primary" type="submit" className="searchBtn">
           Search
         </Button>
       </Form>
+      {results.map((result) => (
+        <SearchResults result={result} />
+      ))}
     </Container>
   );
 };

@@ -10,3 +10,10 @@ front end
     -set up necessary scripts
 
 test test
+
+-work on css and add psuedocode
+    -nav bar
+    -search section
+        -books searched section
+    -saved books section
+        Use setSavedBooks

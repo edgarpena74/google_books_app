@@ -11,8 +11,17 @@ import Col from "react-bootstrap/Col";
 // API.searchBooks();
 
 const SavedBooks = () => {
+  // const [savedBooks, setSavedBooks] = useState([
+  //   {
+  //     title: "",
+  //     authors: "",
+  //     description: "",
+  //     image: "",
+  //     link: "",
+  //   },
+  // ]);
   return (
-    <div>
+    <div className="savedDiv">
       <Container id="booksContainer">
         <Row>
           <Col>Saved Books</Col>

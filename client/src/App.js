@@ -3,14 +3,14 @@ import "./App.css";
 import Nav from "./components/Nav/Nav";
 import Saved from "./components/Saved/Saved";
 import Search from "./components/Search/Search";
-import SearchResults from "./components/Search/SearchResults";
+// import SearchResults from "./components/Search/SearchResults";
 
 function App() {
   return (
     <div className="App">
       <Nav />
       <Search />
-      <SearchResults />
+      {/* <SearchResults /> */}
       <Saved />
     </div>
   );
