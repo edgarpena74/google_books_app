@@ -13,7 +13,7 @@ This app uses the Google Books api to search for books. It allows the user to sa
 
 ##
 
-![screenshot](./Assets/screenshot.png)
+![screenshot](./assets/screenshot.png)
 
 ## Questions
 
