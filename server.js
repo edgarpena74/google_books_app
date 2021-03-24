@@ -2,9 +2,12 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
+const cors = require("cors");
 
 //Port set up
 const PORT = process.env.PORT || 5000;
+
+app.use(cors());
 
 //Middleware
 app.use(express.urlencoded({ extended: true }));
