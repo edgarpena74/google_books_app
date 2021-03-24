@@ -7,15 +7,17 @@ const Navigation = () => {
   return (
     <div>
       <Navbar id="navBar">
-        <Nav.Brand>Google Books App</Nav.Brand>
-        <Nav.Brand className="justify-content-end" activeKey="/home">
+        <Navbar.Brand href="/home" className="navBrand">
+          Google Books
+        </Navbar.Brand>
+        <Navbar className="justify-content-end navItems">
           <Nav.Item>
             <Nav.Link eventKey="link-1">Search</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link eventKey="link-2">Saved</Nav.Link>
           </Nav.Item>
-        </Nav.Brand>
+        </Navbar>
       </Navbar>
     </div>
   );

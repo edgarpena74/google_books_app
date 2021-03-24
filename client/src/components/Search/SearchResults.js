@@ -8,6 +8,11 @@ import Image from "react-bootstrap/Image";
 import API from "../../utils/API";
 import "./Search.css";
 
+// Pseudocode
+// ********************
+//  Find a way to fix the localhost error that i am getting in the console
+//  Then use an axios route to post the data from the book that
+//  was saved.
 const SearchResults = ({ result }) => {
   const [open, setOpen] = useState(false);
 
@@ -29,16 +34,17 @@ const SearchResults = ({ result }) => {
         <Row className="searchResultsRow">
           <Col md="3">{result.volumeInfo.title}</Col>
           <Col md="5">{result.volumeInfo.authors?.join(", ")}</Col>
-          <Col md="2" className="theButtons">
-            <Button type="submit" onClick={handleSubmit}>
+          <Col md="2">
+            <Button type="submit" onClick={handleSubmit} className="theButtons">
               Save
             </Button>
           </Col>
-          <Col md="2" className="theButtons">
+          <Col md="2">
             <Button
               onClick={() => setOpen(!open)}
               aria-controls="bookInfo"
               aria-expanded={open}
+              className="theButtons"
             >
               Details
             </Button>
