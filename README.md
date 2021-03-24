@@ -15,7 +15,7 @@ This app uses the Google Books api to search for books. It allows the user to sa
 
 ![screenshot](./assets/screenshot.png)
 
-## Questions
+## Contact
 
 GitHub: [edgarpena74](https://github.com/edgarpena74)
 
