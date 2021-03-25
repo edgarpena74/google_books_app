@@ -1,0 +1,18 @@
+#navBar {
+  background: #0059b3 !important;
+}
+
+.navBrand {
+  margin-right: 0px !important;
+  color: white !important;
+}
+
+.navItems {
+  margin: none !important;
+  padding: 0 !important;
+  color: white !important;
+}
+
+a:link {
+  color: white !important;
+}

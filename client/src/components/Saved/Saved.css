@@ -1,0 +1,36 @@
+.savedDiv {
+  margin: 7px;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+#savedContainer {
+  text-align: none !important;
+  border-style: solid !important;
+  border-width: 2px !important;
+  border-color: #0059b3 !important;
+
+  /* justify-content: center !important;
+  align-items: center !important; */
+}
+
+.savedBooks {
+  border-style: solid !important;
+  border-width: 2px !important;
+  border-color: #0059b3 !important;
+  margin: 4px !important;
+}
+
+.btnTitleRow {
+  margin-top: 5px !important;
+}
+
+.btnsCol {
+  justify-items: end !important;
+  padding-right: 10px !important;
+}
+
+.savedBtns {
+  background-color: #0059b3 !important;
+  margin-right: 4px !important;
+}
