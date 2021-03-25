@@ -13,12 +13,12 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-//api routes starts with "/api"
-app.use("/api", require("./routes/apiRoutes"));
 // Optimize for Heroku
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+//api routes starts with "/api"
+app.use("/api", require("./routes/apiRoutes"));
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks", {
   useNewUrlParser: true,
