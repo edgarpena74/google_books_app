@@ -1,5 +1,6 @@
 {
-  "name": "google_books_search",
+  "homepage": "http://edgarpena74.github.io/google_books_app",
+  "name": "google_books_app",
   "version": "1.0.0",
   "description": "In this activity, you'll create a new React-based Google Books Search app. This assignment requires you to create React components, work with helper/util functions, and utilize React lifecycle methods to query and display books based on user searches. You'll also use Node, Express and MongoDB so that users can save books to review or purchase later.",
   "main": "server.js",
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "concurrently": "^6.0.0",
+    "gh-pages": "^3.1.0",
     "if-env": "^1.0.4",
     "nodemon": "^2.0.7"
   }
