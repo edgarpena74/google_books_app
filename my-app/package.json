@@ -1,5 +1,5 @@
 {
-  "homepage": "https://edgarpena74.github.io/google_books_app/",
+  "homepage": "http://edgarpena74.github.io/google_books_app",
   "name": "client",
   "version": "0.1.0",
   "proxy": "http://localhost:5000/",
