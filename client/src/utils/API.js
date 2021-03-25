@@ -21,5 +21,4 @@ async function postBooks(book) {
     console.log(error);
   }
 }
-
-module.exports = { getBooks, postBooks };
+export default { getBooks, postBooks };
